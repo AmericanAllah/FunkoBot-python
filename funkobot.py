@@ -16,7 +16,7 @@ class funkobot():
         #self.expr_date = expr_date
         #self.secr_code = secr_code
         self.password = password
-        self.driver = webdriver.Chrome('/Users/Sam/Downloads/chromedriver')
+        self.driver = webdriver.Chrome('/Users/Torin/Downloads/chromedriver')
 
     def login(self):
         self.driver.get('https://www.funko.com/login')
