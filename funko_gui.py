@@ -7,7 +7,7 @@ from funkobot import funkobot
 class funko_gui(site_gui):
     
     def __init__(self):
-        site_gui.__init__(self,"Funko bot","Sam's Automatic Funko Item Buyer")
+        site_gui.__init__(self,"Funko bot","Torin's Automatic Funko Item Buyer")
     
     def start(self):
         self.userInfo(self.input_file)
