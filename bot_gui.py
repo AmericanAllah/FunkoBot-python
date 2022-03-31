@@ -14,8 +14,8 @@ mainframe.columnconfigure(0, weight = 1)
 mainframe.rowconfigure(0, weight = 1)
 mainframe.pack(pady = 100, padx = 100)
 tkvar = StringVar(window)
-choices = { 'Hottopic','Target','Funko'}
-tkvar.set('Hottopic') # set the default option
+choices = { 'TBD','TBD','Funko'}
+tkvar.set('Funko') # set the default option
 popupMenu = OptionMenu(mainframe, tkvar, *choices)
 
 Label(mainframe, text="What website would you like to bot?").grid(row = 1, column = 1)
@@ -31,15 +31,9 @@ tkvar.trace('w', change_dropdown)
 
 def changeGui ():
     website = tkvar.get()
-    if(website == 'Hottopic'):
-        window.destroy()
-        hot = hottopic_gui.hottopic_gui()
-    elif(website == 'Funko'):
+    if(website == 'Funko'):
         window.destroy()
         funko = funko_gui.funko_gui()
-    elif(website == 'Target'):
-        window.destroy()
-        target = target_gui.target_gui()
     else:
         print(website)
 
