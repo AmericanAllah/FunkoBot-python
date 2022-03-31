@@ -4,7 +4,7 @@ import pdb
 
 class webscraper():
     def __init__(self):
-        self.driver = webdriver.Chrome('/Users/Sam/Downloads/chromedriver')
+        self.driver = webdriver.Chrome('/Users/Torin/Downloads/chromedriver')
 
     def get_funko(self):
         self.driver.get('https://www.google.com')
